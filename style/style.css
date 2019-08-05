@@ -1,0 +1,108 @@
+.header-img {
+    background-image: url("../img/9218.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 1349px;
+    height: 800px;
+
+}
+
+.nav {
+    border: 1px solid gray;
+    background-color: rgba(131, 189, 244, 0.6);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.logo {
+
+}
+
+.fa-creative-commons-sampling-plus {
+    font-size: 75px;
+    color: #c72837;
+    padding: 10px 15px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    width: 180px;
+    height: 45px;
+    border-radius: 24px;
+    margin: 21px;
+    background-color: #2bb845;
+    color: #ffff;
+    cursor: pointer;
+}
+.socialCard {
+    width: 1160px;
+    height: 500px;
+    background-color: rgba(131, 189, 244, 0.6);
+    margin: auto;
+
+}
+
+.windowRegistration {
+    width: 400px;
+    height: 496px;
+    background-color: #c6f6cf;
+    border: 1px solid gray;
+    border-radius: 8px;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    top: 30%;
+}
+
+.doctar {
+    width: 220px;
+    padding: 8px;
+    margin: 0 0 10px 10px;
+}
+
+.close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+}
+
+.input {
+    margin: 5px 0;
+    padding: 8px;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.btn-box :first-child {
+    width: 180px;
+    background-color: rgba(39,132,255,.4);
+}
+
+
+.btn-form {
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 6px;
+    width: 100px;
+}
+
+.calendar {
+    display: none;
+}

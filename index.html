@@ -9,43 +9,54 @@
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-    <div class="header-img">
+    <div class="header">
         <div class="nav">
             <a class="logo">
                 <i class="fab fa-creative-commons-sampling-plus"></i>
+                <div class="logo-title">medical</div>
             </a>
-            <a class="btn">Create Button</a>
+            <a id="create-reservation-card" class="btn animation">создать</a>
         </div>
         <div class="socialCard"></div>
-        <div class="windowRegistration">
+        <div id="createReservationModal" class="window-registration">
             <form action="">
-                <div class="close">
-                <i class="fas fa-times "></i>
+                <div id="closeReservationModal" class="close">
+                    <i class="fas fa-times "></i>
                 </div>
                 <select class="doctar" id="doctors-list">
-                    <option selected>Выберите специолиста:</option>
+                    <option id="not-selected" selected>Выберите специолиста:</option>
                     <option id="cardiologist-doc" value="1">Кардиолог</option>
                     <option id="dentist-doc" value="2">Стоматолог</option>
                     <option id="pediatrician-doc" value="3">Терапевт</option>
-                    <input class="calendar" type="date" id="start" name="trip-start"
-                           value="2018-07-22"
-                           min="2018-01-01" max="2018-12-31">
                 </select>
-
+                <div class="medical-logo">
+                    <img src="img/1212.png" alt="">
+                </div>
                 <div class="info">
-                    <input class="input" type="text" placeholder="Имя" required>
-                    <input class="input" type="text" placeholder="Фамилия" required>
-                    <input class="input" type="text" placeholder="Очество" required>
-                    <input class="input" type="text" placeholder="E-mail" required>
-                    <textarea class="input" name="" id="" cols="30" rows="4" placeholder="Comments"></textarea>
+                    <input id="first-name-field" class="input" type="text" placeholder="Имя" required>
+                    <input id="second-name-field" class="input" type="text" placeholder="Фамилия" required>
+                    <input id="fathers-name-field" class="input" type="text" placeholder="Очество" required>
+                    <input id="email-field" class="input" type="text" placeholder="E-mail" required>
+                    <textarea id="comment-field" class="input" name="" cols="30" rows="4" placeholder="Comments"></textarea>
                 </div>
                 <div class="btn-box">
-                    <input class="btn-form" type="submit" value="Create">
-                    <input class="btn-form" type="reset" value="Reset">
+                    <input id="make-reservation" class="btn-form animation" type="submit" value="Создать">
+                    <input class="btn-form animation" type="reset" value="Сброс">
                 </div>
             </form>
         </div>
+        <footer class="footer">
+            <div>&copy; Kyev Ukraine 2019</div>
+            <a>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-pinterest-square"></i>
+                <i class="fab fa-viber"></i>
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
 

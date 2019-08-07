@@ -1,10 +1,10 @@
-.header-img {
+.header {
     background-image: url("../img/9218.jpg");
     background-size: cover;
     background-position: center;
     width: 1349px;
     height: 800px;
-
+    font-family: Geneva, Arial, Helvetica, sans-serif;
 }
 
 .nav {
@@ -12,11 +12,16 @@
     background-color: rgba(131, 189, 244, 0.6);
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 62px;
 }
 
 .logo {
-
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #c72837;
+    cursor: pointer;
 }
 
 .fa-creative-commons-sampling-plus {
@@ -37,7 +42,16 @@
     background-color: #2bb845;
     color: #ffff;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
 }
+
+.animation:hover {
+    transform: scale(1.04);
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
 .socialCard {
     width: 1160px;
     height: 500px;
@@ -46,10 +60,10 @@
 
 }
 
-.windowRegistration {
+.window-registration {
     width: 400px;
     height: 496px;
-    background-color: #c6f6cf;
+    background-color: #fff;
     border: 1px solid gray;
     border-radius: 8px;
     position: absolute;
@@ -61,7 +75,7 @@
 .doctar {
     width: 220px;
     padding: 8px;
-    margin: 0 0 10px 10px;
+    margin: 0 0 22px 10px;
 }
 
 .close {
@@ -105,4 +119,19 @@
 
 .calendar {
     display: none;
+}
+
+.medical-logo {
+    position: absolute;
+    right: 62px;
+    top: 27px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 63px;
+    background-color: rgba(131, 189, 244, 0.6);
+    padding: 21px 0;
 }

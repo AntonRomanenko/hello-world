@@ -61,6 +61,7 @@
 }
 
 .window-registration {
+    display: none;
     width: 400px;
     height: 496px;
     background-color: #fff;
@@ -70,6 +71,10 @@
     right: 50%;
     left: 50%;
     top: 30%;
+}
+
+.active-modal {
+    display: block;
 }
 
 .doctar {

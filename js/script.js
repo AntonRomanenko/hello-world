@@ -2,7 +2,7 @@ const createCardModal = document.getElementById("createReservationModal");
 const createCardBtn = document.getElementById("create-reservation-card");
 const closeModalBtn = document.getElementById("closeReservationModal");
 const inputParent = document.getElementById("input-wrapper");
-
+console.log('test');
 class Visit {
     constructor (firstName, lastName, fathersName, visitTarget, comment) {
         this.firstName = firstName;
@@ -70,6 +70,7 @@ function createFioFields() {
 function createField(tagName, inputId, className, inputType, labelText, required) {
     const input = document.createElement(tagName);
     const label = document.createElement("label");
+    const inputName = document.createElement('span');
 
     input.id = inputId;
     input.className = className;
@@ -77,7 +78,8 @@ function createField(tagName, inputId, className, inputType, labelText, required
     if(required === true) {
         input.setAttribute("required", true);
     }
-    label.innerHTML = `${labelText}`;
+    inputName.innerHTML = `${labelText}`;
+    label.appendChild(inputName);
     label.appendChild(input);
     inputParent.appendChild(label);
 }
@@ -97,18 +99,21 @@ function whatDoc() {
             createField("input", "mass-weight-index-field", "input", "number", "Индекс массы тела", "true");
             createField("input", "last-sickness-field", "input", "text", "Перенесенные заболевания СС системы", "true");
             createField("input", "age-field", "input", "number", "Возраст", "true");
+            createField("textarea", "note-field", "note", "textarea", "Заметки", "false");
             break;
         case "dentist-doc":
             clearModal();
             createFioFields();
             createField("input", "visit-target-field", "input", "text", "Цель визита", "true");
             createField("input", "last-visit-field", "input", "date", "Дата последнего визита");
+            createField("textarea", "note-field", "note", "textarea", "Заметки", "false");
             break;
         case "therapist-doc":
             clearModal();
             createFioFields();
             createField("input", "visit-target-field", "input", "text", "Цель визита", "true");
             createField("input", "age-field", "input", "number", "Возраст", "true");
+            createField("textarea", "note-field", "note", "textarea", "Заметки", "false");
             break;
     }
 }

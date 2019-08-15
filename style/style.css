@@ -63,7 +63,6 @@
 .window-registration {
     display: none;
     width: 400px;
-    height: 496px;
     background-color: #fff;
     border: 1px solid gray;
     border-radius: 8px;
@@ -71,6 +70,7 @@
     right: 50%;
     left: 50%;
     top: 30%;
+    padding-bottom: 10px;
 }
 
 .active-modal {
@@ -96,6 +96,11 @@
     flex-direction: column;
     margin: 10px;
 
+}
+.info label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .input {
